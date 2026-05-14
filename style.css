@@ -1,0 +1,77 @@
+:root {
+  --color-primary: #0d1b2a;
+  --color-secondary: #e0e1dd;
+  --color-background: #415a77;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: var(--color-primary);
+}
+
+body h1 {
+  margin: 20px 0;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+#search-input {
+  width: 400px;
+  height: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+}
+.match-card {
+  background-color: var(--color-secondary);
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid var(--color-primary);
+}
+
+.match-card h2 {
+  margin: 5px 0;
+  font-size: 40px;
+}
+
+.match-card h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.match-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  justify-content: left;
+}
+
+.round {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.date {
+  justify-content: right;
+}
