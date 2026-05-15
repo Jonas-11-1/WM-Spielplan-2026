@@ -1,7 +1,11 @@
 :root {
-  --color-primary: #0d1b2a;
-  --color-secondary: #e0e1dd;
   --color-background: #415a77;
+  --color-fill: #f3f3f3;
+  --color-shadow: #364b62;
+  --color-primary: #415a77;
+  --color-secondary: #f3f3f3;
+  --color-border: #9aa7b5;
+  --color-text: #000000;
 }
 
 body {
@@ -13,13 +17,14 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: "Arial", sans-serif;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 body h1 {
   margin: 20px 0;
   font-size: 36px;
   color: var(--color-secondary);
+  text-shadow: 0 4px 6px var(--color-shadow);
 }
 
 #search-input {
@@ -29,20 +34,25 @@ body h1 {
   margin-bottom: 20px;
   font-size: 16px;
   text-align: center;
-  background-color: var(--color-secondary);
-  border: 2px solid var(--color-primary);
+  background-color: var(--color-fill);
+  box-shadow: 0 4px 6px var(--color-shadow);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
 }
 .match-card {
-  background-color: var(--color-secondary);
+  background-color: var(--color-fill);
   width: 400px;
   padding: 10px;
   margin: 20px;
-  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 6px var(--color-shadow);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
 }
 
 .match-card h2 {
   margin: 5px 0;
   font-size: 40px;
+  color: var(--color-primary);
 }
 
 .match-card h4 {
