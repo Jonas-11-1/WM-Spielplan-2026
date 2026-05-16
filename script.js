@@ -14,6 +14,8 @@ fetch("./wm-gamedata.json")
         reformateMatchDate(a.date, a.time) - reformateMatchDate(b.date, b.time),
     );
 
+    const today = new Date();
+
     data.matches.forEach((match) => {
       const card = document.createElement("div");
       card.className += "match-card";
@@ -30,6 +32,22 @@ fetch("./wm-gamedata.json")
             <p>${match.ground}</p>
             </div>
         `;
+
+      const matchDate = reformateMatchDate(match.date, match.time);
+
+      if (
+        matchDate.getFullYear() === today.getFullYear() &&
+        matchDate.getMonth() === today.getMonth() &&
+        matchDate.getDate() === today.getDate()
+      ) {
+        card.classList.add("today");
+      }
+
       gameContainer.appendChild(card);
+
+      const todayCard = document.querySelector(".match-card.today");
+      if (todayCard) {
+        todayCard.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
   });
