@@ -1,8 +1,19 @@
 const gameContainer = document.getElementById("matches-container");
 
+function reformateMatchDate(dateStr, timeStr) {
+  const [day, month, year] = dateStr.split(".").map(Number);
+  const [hours, minutes] = timeStr.split(":").map(Number);
+  return new Date(year, month - 1, day, hours, minutes);
+}
+
 fetch("./wm-gamedata.json")
   .then((response) => response.json())
   .then((data) => {
+    data.matches.sort(
+      (a, b) =>
+        reformateMatchDate(a.date, a.time) - reformateMatchDate(b.date, b.time),
+    );
+
     data.matches.forEach((match) => {
       const card = document.createElement("div");
       card.className += "match-card";
