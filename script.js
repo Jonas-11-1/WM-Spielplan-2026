@@ -4,7 +4,11 @@ const gameContainer = document.getElementById("matches-container");
 
 const searchInput = document.getElementById("search-input");
 searchInput.addEventListener("input", (e) => {
-  renderMatches(e.target.value.trim());
+  const queries = e.target.value
+    .split(",")
+    .map((q) => q.trim())
+    .filter((q) => q !== "");
+  renderMatches(queries);
 });
 
 function reformateMatchDate(dateStr, timeStr) {
@@ -13,24 +17,25 @@ function reformateMatchDate(dateStr, timeStr) {
   return new Date(year, month - 1, day, hours, minutes);
 }
 
-function matchesSearch(match, query) {
-  if (!query) return true;
-  const q = query.toLowerCase();
-  return [
-    match.team1,
-    match.team2,
-    match.ground,
-    match.round,
-    match.date,
-    match.time,
-  ].some((val) => val && val.toLowerCase().includes(q));
+function matchesSearch(match, queries) {
+  if (queries.length === 0) return true;
+  return queries.every((query) => {
+    const q = query.toLowerCase();
+    return [
+      match.team1,
+      match.team2,
+      match.ground,
+      match.round,
+      match.date,
+      match.time,
+    ].some((val) => val && val.toLowerCase().includes(q));
+  });
 }
 
-function renderMatches(query) {
+function renderMatches(queries) {
   gameContainer.innerHTML = "";
   const filtered = allMatches.filter((match) => {
-    if (!query) return true;
-    return matchesSearch(match, query);
+    return matchesSearch(match, queries);
   });
   const today = new Date();
   filtered.forEach((match) => {
@@ -87,5 +92,5 @@ fetch("./wm-gamedata.json")
         reformateMatchDate(a.date, a.time) - reformateMatchDate(b.date, b.time),
     );
 
-    renderMatches("");
+    renderMatches([]);
   });
