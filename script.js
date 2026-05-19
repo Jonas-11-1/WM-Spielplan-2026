@@ -45,10 +45,20 @@ function renderMatches(query) {
 
             <div class="card-body">
             <h2>${match.flag1} ${match.goals1} : ${match.goals2} ${match.flag2}</h2>
-            <h4>${match.team1} : ${match.team2}</h4>
+            <div class="teams">
+            <span class="team1">${match.team1}</span>
+            <span> : </span>
+            <span class="team2">${match.team2}</span>
+            </div>
             <p>${match.ground}</p>
             </div>
         `;
+
+    if (match.goals1 > match.goals2) {
+      card.getElementsByClassName("team2")[0].style.fontWeight = "normal";
+    } else if (match.goals2 > match.goals1) {
+      card.getElementsByClassName("team1")[0].style.fontWeight = "normal";
+    }
 
     const matchDate = reformateMatchDate(match.date, match.time);
 

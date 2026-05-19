@@ -89,3 +89,9 @@ body h1 {
 .date {
   justify-content: right;
 }
+
+.teams {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
