@@ -84,7 +84,15 @@ function renderMatches(queries) {
   });
 }
 
-fetch("./wm-gamedata.json")
+function reqDevPage() {
+  if (prompt("Enter password") == "adminWM") {
+    window.location.href = "./dev-page/index.html";
+  } else {
+    alert("Wrong password!");
+  }
+}
+
+fetch("./assets/wm-gamedata.json")
   .then((response) => response.json())
   .then((data) => {
     allMatches = data.matches.sort(
