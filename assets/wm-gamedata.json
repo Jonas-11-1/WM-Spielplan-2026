@@ -295,8 +295,8 @@
       "time": "19:00",
       "team1": "Deutschland",
       "team2": "Curaçao",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "7",
+      "goals2": "1",
       "flag1": "🇩🇪",
       "flag2": "🇨🇼",
       "ground": "Houston"
@@ -307,8 +307,8 @@
       "time": "01:00",
       "team1": "Elfenbeinküste",
       "team2": "Ecuador",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "1",
+      "goals2": "0",
       "flag1": "🇨🇮",
       "flag2": "🇪🇨",
       "ground": "Philadelphia"
@@ -367,8 +367,8 @@
       "time": "20:00",
       "team1": "Niederlande",
       "team2": "Japan",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "2",
+      "goals2": "2",
       "flag1": "🇳🇱",
       "flag2": "🇯🇵",
       "ground": "Dallas (Arlington)"
@@ -379,8 +379,8 @@
       "time": "04:00",
       "team1": "Schweden",
       "team2": "Tunesien",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "5",
+      "goals2": "1",
       "flag1": "🇸🇪",
       "flag2": "🇹🇳",
       "ground": "Monterrey (Guadalupe)"
