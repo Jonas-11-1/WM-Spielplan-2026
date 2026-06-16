@@ -439,8 +439,8 @@
       "time": "21:00",
       "team1": "Belgien",
       "team2": "Ägypten",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "1",
+      "goals2": "1",
       "flag1": "🇧🇪",
       "flag2": "🇪🇬",
       "ground": "Seattle"
@@ -451,8 +451,8 @@
       "time": "03:00",
       "team1": "Iran",
       "team2": "Neuseeland",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "2",
+      "goals2": "2",
       "flag1": "🇮🇷",
       "flag2": "🇳🇿",
       "ground": "Los Angeles (Inglewood)"
@@ -511,8 +511,8 @@
       "time": "18:00",
       "team1": "Spanien",
       "team2": "Kap Verde",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "0",
+      "goals2": "0",
       "flag1": "🇪🇸",
       "flag2": "🇨🇻",
       "ground": "Atlanta"
@@ -523,8 +523,8 @@
       "time": "00:00",
       "team1": "Saudi-Arabien",
       "team2": "Uruguay",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "1",
+      "goals2": "1",
       "flag1": "🇸🇦",
       "flag2": "🇺🇾",
       "ground": "Miami (Miami Gardens)"
