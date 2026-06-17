@@ -583,8 +583,8 @@
       "time": "21:00",
       "team1": "Frankreich",
       "team2": "Senegal",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "3",
+      "goals2": "1",
       "flag1": "🇫🇷",
       "flag2": "🇸🇳",
       "ground": "New York/New Jersey (East Rutherford)"
@@ -595,8 +595,8 @@
       "time": "00:00",
       "team1": "Irak",
       "team2": "Norwegen",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "1",
+      "goals2": "4",
       "flag1": "🇮🇶",
       "flag2": "🇳🇴",
       "ground": "Boston (Foxborough)"
@@ -655,8 +655,8 @@
       "time": "03:00",
       "team1": "Argentinien",
       "team2": "Algerien",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "3",
+      "goals2": "0",
       "flag1": "🇦🇷",
       "flag2": "🇩🇿",
       "ground": "Kansas City"
@@ -667,8 +667,8 @@
       "time": "06:00",
       "team1": "Österreich",
       "team2": "Jordanien",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "3",
+      "goals2": "1",
       "flag1": "🇦🇹",
       "flag2": "🇯🇴",
       "ground": "San Francisco Bay Area (Santa Clara)"
