@@ -175,8 +175,8 @@
       "time": "00:00",
       "team1": "Schottland",
       "team2": "Marokko",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "0",
+      "goals2": "1",
       "flag1": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "flag2": "🇲🇦",
       "ground": "Boston (Foxborough)"
@@ -187,8 +187,8 @@
       "time": "02:30",
       "team1": "Brasilien",
       "team2": "Haiti",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "3",
+      "goals2": "0",
       "flag1": "🇧🇷",
       "flag2": "🇭🇹",
       "ground": "Philadelphia"
@@ -247,8 +247,8 @@
       "time": "21:00",
       "team1": "USA",
       "team2": "Australien",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "2",
+      "goals2": "0",
       "flag1": "🇺🇸",
       "flag2": "🇦🇺",
       "ground": "Seattle"
@@ -259,8 +259,8 @@
       "time": "05:00",
       "team1": "Türkei",
       "team2": "Paraguay",
-      "goals1": "-",
-      "goals2": "-",
+      "goals1": "0",
+      "goals2": "1",
       "flag1": "🇹🇷",
       "flag2": "🇵🇾",
       "ground": "San Francisco Bay Area (Santa Clara)"
